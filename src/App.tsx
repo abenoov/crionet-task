@@ -1,9 +1,7 @@
+import CountryList from "./components/CountryList";
+
 function App() {
-  return (
-    <>
-      <p>hello world</p>
-    </>
-  );
+  return <CountryList />;
 }
 
 export default App;
