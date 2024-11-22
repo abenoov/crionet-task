@@ -5,10 +5,21 @@ export const GET_ALL_COUNTRIES = gql`
     countries {
       name
       capital
+      emoji
       continent {
         name
       }
-      emoji
+      languages {
+        name
+      }
+    }
+  }
+`;
+
+export const GET_CONTINENTS = gql`
+  query GetContinents {
+    continents {
+      name
     }
   }
 `;
